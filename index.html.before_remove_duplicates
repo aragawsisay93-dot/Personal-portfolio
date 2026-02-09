@@ -85,20 +85,6 @@
 
                     <div class="h1_big text-white">
                       Aragaw Sisay PhD. <br> MD,USA <br>
-                      <div class="profile-links">
-  <a href="https://www.linkedin.com/in/sisay-gebeyehu-b3b94232a/?originalSubdomain=et"
-     target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-linkedin"></i>
-    LinkedIn
-  </a>
-
-  <a href="https://scholar.google.com/citations?user=EQp9S8EAAAAJ&hl=en"
-     target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-graduation-cap"></i>
-    Google Scholar
-  </a>
-</div>
-
                       <div class="typed-strings">
                         <p>Pharmaceutical Biotechnologist & Licensed Pharmacist</p>
                         <p>Healthcare Technology Innovator</p>
@@ -405,7 +391,7 @@
           <!-- ========================= -->
           <div class="item illustration website gallery-item">
             <div class="picframe wow">
-              <a href="images/portfolio/pf(14).png" target="_blank" rel="noopener noreferrer">
+              <!-- <a href="images/portfolio/pf(14).png" target="_blank" rel="noopener noreferrer"> -->
                 <span class="overlay">
                   <span class="pf_text">
                     <span class="project-name">B-pharm, MSc, PhD</span>
@@ -425,6 +411,39 @@
 
       <!-- section close -->
 
+                <!-- Example static image (no link) -->
+                <div class="item illustration website gallery-item">
+                  <div class="picframe wow">
+                    <a href="images/portfolio/pf(13).png" target="_blank" rel="noopener noreferrer">
+                      <span class="overlay">
+                        <span class="pf_text">
+                          <span class="project-name">Formulation and Development</span>
+                        </span>
+                      </span>
+                      <img src="images/portfolio/pf(13).png" class="img-fluid" alt="Formulation and Development" />
+                    </a>
+                  </div>
+                </div>
+
+                   <div class="item illustration website gallery-item">
+                  <div class="picframe wow">
+                    <a href="images/portfolio/pf(14).png" target="_blank" rel="noopener noreferrer">
+                      <span class="overlay">
+                        <span class="pf_text">
+                          <span class="project-name">B-pharm,MSc,PhD</span>
+                        </span>
+                      </span>
+                      <img src="images/portfolio/pf(14).png" class="img-fluid" alt="Formulation and Development" />
+                    </a>
+                  </div>
+                </div>
+
+              </div><!-- gallery -->
+            </div>
+          </div>
+
+        </div>
+      </section>
       <!-- section close -->
 
       <!-- section begin -->

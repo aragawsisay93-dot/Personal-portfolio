@@ -685,38 +685,6 @@ header.header-mobile.header-light #menu-btn {
 
 /* ================================================== */
 
-.profile-links {
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.profile-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 16px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-  text-decoration: none;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  transition: all 0.25s ease;
-}
-
-.profile-links a:hover {
-  background: #111;
-  color: #fff;
-  border-color: #111;
-  transform: translateY(-1px);
-}
-
-.profile-links i {
-  font-size: 16px;
-}
 
 /* content */
 
@@ -6536,9 +6504,9 @@ animation: blink 0.7s infinite;
 	width:15%;
 	font-weight:bold;
 }
-
+/*
 .exp-list .l img{
-	-webkit-filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 	opacity:.5;
 }
@@ -7846,60 +7814,51 @@ a, img {
     height:3px;
   }
 }
-/* =========================================
-   FORCE EQUAL SIZE FOR PORTFOLIO IMAGES
-   (pf(13), pf(14), 3D, and all gallery items)
-   ========================================= */
-
-#gallery {
+/* ✅ Flex grid: 3 items per row */
+#gallery.portfolio-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-/* Each portfolio card */
-#gallery .gallery-item {
+/* ✅ each card takes 1/3 */
+#gallery.portfolio-grid .gallery-item {
   flex: 0 0 calc(33.333% - 16px);
   box-sizing: border-box;
 }
 
-/* Card frame = SAME SIZE */
-#gallery .picframe {
+/* ✅ equal height for all images/cards */
+#gallery.portfolio-grid .picframe {
   position: relative;
   width: 100%;
-  height: 260px;          /* 🔑 SAME HEIGHT */
+  height: 260px;
   overflow: hidden;
   border-radius: 14px;
 }
 
-/* Image = SAME WIDTH & HEIGHT */
-#gallery .picframe img {
+/* ✅ images become same size */
+#gallery.portfolio-grid img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* 🔑 keeps aspect ratio */
+  object-fit: cover;
   display: block;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
-
-/* Tablet: 2 per row */
+/* ✅ responsive */
 @media (max-width: 992px) {
-  #gallery .gallery-item {
+  #gallery.portfolio-grid .gallery-item {
     flex: 0 0 calc(50% - 12px);
   }
-  #gallery .picframe {
+  #gallery.portfolio-grid .picframe {
     height: 240px;
   }
 }
 
-/* Mobile: 1 per row */
 @media (max-width: 576px) {
-  #gallery .gallery-item {
+  #gallery.portfolio-grid .gallery-item {
     flex: 0 0 100%;
   }
-  #gallery .picframe {
+  #gallery.portfolio-grid .picframe {
     height: 220px;
   }
 }
